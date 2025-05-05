@@ -1,0 +1,81 @@
+<svg width="800" height="250" viewBox="0 0 800 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient animation -->
+  <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1a1a2e">
+      <animate attributeName="stop-color" 
+        values="#1a1a2e; #16213e; #0f3460; #16213e; #1a1a2e"
+        dur="10s" repeatCount="indefinite" />
+    </stop>
+    <stop offset="100%" stop-color="#16213e">
+      <animate attributeName="stop-color" 
+        values="#16213e; #0f3460; #1a1a2e; #0f3460; #16213e"
+        dur="10s" repeatCount="indefinite" />
+    </stop>
+  </linearGradient>
+  <rect width="800" height="250" fill="url(#bg-gradient)" rx="10" ry="10" />
+  
+  <!-- Title with glowing effect -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Battery Impedance Analyzer
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite" />
+  </text>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="18" fill="#64dfdf" text-anchor="middle">
+    Advanced EIS Analysis System by Ucaretron Inc.
+    <animate attributeName="fill" values="#64dfdf;#4cc9f0;#64dfdf" dur="5s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- Decorative wave pattern representing impedance data with animation -->
+  <path d="M50,160 C100,120 150,200 200,160 C250,120 300,200 350,160 C400,120 450,200 500,160 C550,120 600,200 650,160 C700,120 750,200 800,160" stroke="#7b2cbf" stroke-width="3" fill="none">
+    <animate attributeName="d" 
+      values="M50,160 C100,120 150,200 200,160 C250,120 300,200 350,160 C400,120 450,200 500,160 C550,120 600,200 650,160 C700,120 750,200 800,160;
+              M50,165 C100,130 150,190 200,165 C250,130 300,190 350,165 C400,130 450,190 500,165 C550,130 600,190 650,165 C700,130 750,190 800,165;
+              M50,160 C100,120 150,200 200,160 C250,120 300,200 350,160 C400,120 450,200 500,160 C550,120 600,200 650,160 C700,120 750,200 800,160"
+      dur="6s" repeatCount="indefinite" />
+  </path>
+  <path d="M50,165 C100,125 150,205 200,165 C250,125 300,205 350,165 C400,125 450,205 500,165 C550,125 600,205 650,165 C700,125 750,205 800,165" stroke="#5a189a" stroke-width="2" fill="none">
+    <animate attributeName="d" 
+      values="M50,165 C100,125 150,205 200,165 C250,125 300,205 350,165 C400,125 450,205 500,165 C550,125 600,205 650,165 C700,125 750,205 800,165;
+              M50,160 C100,135 150,185 200,160 C250,135 300,185 350,160 C400,135 450,185 500,160 C550,135 600,185 650,160 C700,135 750,185 800,160;
+              M50,165 C100,125 150,205 200,165 C250,125 300,205 350,165 C400,125 450,205 500,165 C550,125 600,205 650,165 C700,125 750,205 800,165"
+      dur="6s" repeatCount="indefinite" begin="1s" />
+  </path>
+  
+  <!-- Battery icon with charging animation -->
+  <rect x="350" y="120" width="100" height="60" fill="#3d5a80" rx="5" ry="5" />
+  <rect x="450" y="135" width="10" height="30" fill="#3d5a80" rx="2" ry="2" />
+  
+  <!-- Battery segments representing charge with fill animation -->
+  <rect x="360" y="130" width="16" height="40" fill="#f72585" rx="2" ry="2">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="0s" />
+  </rect>
+  <rect x="382" y="130" width="16" height="40" fill="#7209b7" rx="2" ry="2">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="0.5s" />
+  </rect>
+  <rect x="404" y="130" width="16" height="40" fill="#4361ee" rx="2" ry="2">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="1s" />
+  </rect>
+  <rect x="426" y="130" width="16" height="40" fill="#4cc9f0" rx="2" ry="2">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="1.5s" />
+  </rect>
+  
+  <!-- Measurement signal icons with pulsing effect -->
+  <circle cx="310" cy="150" r="25" fill="none" stroke="#f72585" stroke-width="3">
+    <animate attributeName="r" values="25;23;25" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <path d="M290,150 L300,140 L310,160 L320,140 L330,150" stroke="#f72585" stroke-width="3" fill="none">
+    <animate attributeName="stroke-width" values="3;4;3" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <circle cx="490" cy="150" r="25" fill="none" stroke="#4cc9f0" stroke-width="3">
+    <animate attributeName="r" values="25;23;25" dur="3s" repeatCount="indefinite" begin="1.5s" />
+  </circle>
+  <path d="M470,150 L480,140 L490,160 L500,140 L510,150" stroke="#4cc9f0" stroke-width="3" fill="none">
+    <animate attributeName="stroke-width" values="3;4;3" dur="3s" repeatCount="indefinite" begin="1.5s" />
+  </path>
+  
+  <!-- Bottom tagline with color change -->
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">
+    Electrochemical Impedance Spectroscopy for Battery Analysis
+    <animate attributeName="fill" values="#ffffff;#64dfdf;#ffffff" dur="8s" repeatCount="indefinite" />
+  </text>
+</svg>
