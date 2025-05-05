@@ -127,10 +127,6 @@ This software implements methodologies based on the following scientific princip
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📧 Contact
-
-For questions and support, please contact: support@ucaretron.com
-
 ---
 
 *Battery Impedance Analyzer - Advancing battery analysis through integrated thermal-electrical impedance spectroscopy*
