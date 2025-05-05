@@ -1,0 +1,110 @@
+<svg width="800" height="330" viewBox="0 0 800 330" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle pulse -->
+  <rect width="800" height="330" fill="#1a1a2e" fill-opacity="0.3" rx="10" ry="10">
+    <animate attributeName="fill-opacity" values="0.3;0.4;0.3" dur="10s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Title with glow effect -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Impedance Data Visualization
+    <animate attributeName="fill" values="#ffffff;#e2e2e2;#ffffff" dur="5s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- Nyquist Plot Container with glow effect -->
+  <rect x="50" y="70" width="320" height="220" fill="#16213e" fill-opacity="0.3" rx="5" ry="5" stroke="#4cc9f0" stroke-width="2">
+    <animate attributeName="stroke" values="#4cc9f0;#7b2cbf;#4cc9f0" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="stroke-width" values="2;3;2" dur="5s" repeatCount="indefinite" />
+  </rect>
+  <text x="210" y="90" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">Nyquist Plot</text>
+  
+  <!-- Nyquist Plot Axes -->
+  <line x1="80" y1="250" x2="330" y2="250" stroke="#ffffff" stroke-width="1" />
+  <line x1="80" y1="110" x2="80" y2="250" stroke="#ffffff" stroke-width="1" />
+  <text x="205" y="270" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Z' (Real)</text>
+  <text x="60" y="180" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" transform="rotate(-90, 60, 180)">-Z" (Imaginary)</text>
+  
+  <!-- Nyquist Plot Data with drawing animation -->
+  <path d="M80,250 Q120,220 180,170 Q240,120 330,110" stroke="#f72585" stroke-width="2.5" fill="none">
+    <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="5s" repeatCount="1" />
+    <animate attributeName="stroke-width" values="2.5;3;2.5" dur="5s" repeatCount="indefinite" begin="5s" />
+  </path>
+  <path d="M80,250 Q130,210 200,175 Q270,140 330,140" stroke="#4cc9f0" stroke-width="2.5" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="5s" repeatCount="1" begin="1s" />
+    <animate attributeName="stroke-width" values="2.5;3;2.5" dur="5s" repeatCount="indefinite" begin="6s" />
+  </path>
+  <path d="M80,250 Q110,230 160,200 Q210,170 330,160" stroke="#7b2cbf" stroke-width="2.5" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="5s" repeatCount="1" begin="2s" />
+    <animate attributeName="stroke-width" values="2.5;3;2.5" dur="5s" repeatCount="indefinite" begin="7s" />
+  </path>
+  
+  <!-- Legend for Nyquist with highlight animation -->
+  <circle cx="100" cy="300" r="5" fill="#f72585">
+    <animate attributeName="r" values="5;6;5" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <text x="110" y="304" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="start">New Battery</text>
+  
+  <circle cx="200" cy="300" r="5" fill="#4cc9f0">
+    <animate attributeName="r" values="5;6;5" dur="3s" repeatCount="indefinite" begin="1s" />
+  </circle>
+  <text x="210" y="304" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="start">Used Battery</text>
+  
+  <circle cx="300" cy="300" r="5" fill="#7b2cbf">
+    <animate attributeName="r" values="5;6;5" dur="3s" repeatCount="indefinite" begin="2s" />
+  </circle>
+  <text x="310" y="304" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="start">Aged Battery</text>
+  
+  <!-- Bode Plot Container with glow effect -->
+  <rect x="430" y="70" width="320" height="220" fill="#16213e" fill-opacity="0.3" rx="5" ry="5" stroke="#4cc9f0" stroke-width="2">
+    <animate attributeName="stroke" values="#4cc9f0;#7b2cbf;#4cc9f0" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="stroke-width" values="2;3;2" dur="5s" repeatCount="indefinite" />
+  </rect>
+  <text x="590" y="90" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">Bode Plot</text>
+  
+  <!-- Bode Plot Axes -->
+  <line x1="460" y1="250" x2="710" y2="250" stroke="#ffffff" stroke-width="1" />
+  <line x1="460" y1="110" x2="460" y2="250" stroke="#ffffff" stroke-width="1" />
+  <text x="585" y="270" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Frequency (Hz)</text>
+  <text x="440" y="180" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" transform="rotate(-90, 440, 180)">|Z| (Ohms)</text>
+  
+  <!-- Bode Plot Data with drawing animation -->
+  <path d="M460,120 Q510,130 560,150 Q610,170 660,200 Q710,230 710,250" stroke="#f72585" stroke-width="2.5" fill="none">
+    <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="5s" repeatCount="1" />
+    <animate attributeName="stroke-width" values="2.5;3;2.5" dur="5s" repeatCount="indefinite" begin="5s" />
+  </path>
+  <path d="M460,140 Q510,150 560,170 Q610,190 660,220 Q710,240 710,250" stroke="#4cc9f0" stroke-width="2.5" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="5s" repeatCount="1" begin="1s" />
+    <animate attributeName="stroke-width" values="2.5;3;2.5" dur="5s" repeatCount="indefinite" begin="6s" />
+  </path>
+  <path d="M460,160 Q510,170 560,190 Q610,210 660,230 Q710,245 710,250" stroke="#7b2cbf" stroke-width="2.5" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="5s" repeatCount="1" begin="2s" />
+    <animate attributeName="stroke-width" values="2.5;3;2.5" dur="5s" repeatCount="indefinite" begin="7s" />
+  </path>
+  
+  <!-- X-axis labels for Bode with highlight effect -->
+  <text x="460" y="260" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">
+    0.01
+    <animate attributeName="fill" values="#ffffff;#4cc9f0;#ffffff" dur="10s" repeatCount="indefinite" />
+  </text>
+  <text x="520" y="260" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">
+    0.1
+    <animate attributeName="fill" values="#ffffff;#4cc9f0;#ffffff" dur="10s" repeatCount="indefinite" begin="2s" />
+  </text>
+  <text x="580" y="260" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">
+    1
+    <animate attributeName="fill" values="#ffffff;#4cc9f0;#ffffff" dur="10s" repeatCount="indefinite" begin="4s" />
+  </text>
+  <text x="640" y="260" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">
+    10
+    <animate attributeName="fill" values="#ffffff;#4cc9f0;#ffffff" dur="10s" repeatCount="indefinite" begin="6s" />
+  </text>
+  <text x="700" y="260" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">
+    100
+    <animate attributeName="fill" values="#ffffff;#4cc9f0;#ffffff" dur="10s" repeatCount="indefinite" begin="8s" />
+  </text>
+  
+  <!-- Measurement point animation -->
+  <circle cx="0" cy="0" r="4" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="10s" repeatCount="indefinite" />
+    <animateMotion path="M510,130 Q560,150 610,170 Q660,200 710,230" dur="10s" repeatCount="indefinite" />
+  </circle>
+</svg>
