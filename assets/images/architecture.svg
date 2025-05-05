@@ -1,0 +1,78 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with slow gradient pulse effect -->
+  <rect width="800" height="400" fill="#16213e" fill-opacity="0.3" rx="10" ry="10">
+    <animate attributeName="fill-opacity" values="0.3;0.5;0.3" dur="10s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Title with glow effect -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    System Architecture
+    <animate attributeName="fill" values="#ffffff;#e2e2e2;#ffffff" dur="5s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- Hardware Layer with highlight animation -->
+  <rect x="100" y="80" width="600" height="80" fill="#f72585" fill-opacity="0.2" rx="5" ry="5" stroke="#f72585" stroke-width="2">
+    <animate attributeName="fill-opacity" values="0.2;0.3;0.2" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="stroke-width" values="2;3;2" dur="6s" repeatCount="indefinite" />
+  </rect>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Hardware Layer</text>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Impedance Measurement Circuits | Temperature Sensors | Data Acquisition</text>
+  
+  <!-- Software Layer with highlight animation -->
+  <rect x="100" y="180" width="600" height="80" fill="#7209b7" fill-opacity="0.2" rx="5" ry="5" stroke="#7209b7" stroke-width="2">
+    <animate attributeName="fill-opacity" values="0.2;0.3;0.2" dur="6s" repeatCount="indefinite" begin="2s" />
+    <animate attributeName="stroke-width" values="2;3;2" dur="6s" repeatCount="indefinite" begin="2s" />
+  </rect>
+  <text x="400" y="210" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Software Layer</text>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Signal Processing | EIS Analysis | Battery Models | Machine Learning</text>
+  
+  <!-- Application Layer with highlight animation -->
+  <rect x="100" y="280" width="600" height="80" fill="#4361ee" fill-opacity="0.2" rx="5" ry="5" stroke="#4361ee" stroke-width="2">
+    <animate attributeName="fill-opacity" values="0.2;0.3;0.2" dur="6s" repeatCount="indefinite" begin="4s" />
+    <animate attributeName="stroke-width" values="2;3;2" dur="6s" repeatCount="indefinite" begin="4s" />
+  </rect>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">Application Layer</text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">User Interface | Reporting | Alerts | Integration APIs</text>
+  
+  <!-- Connection Lines with pulse animation -->
+  <line x1="400" y1="160" x2="400" y2="180" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="stroke-dasharray" values="5,5;7,5;5,5" dur="4s" repeatCount="indefinite" />
+  </line>
+  <line x1="400" y1="260" x2="400" y2="280" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="4s" repeatCount="indefinite" begin="2s" />
+    <animate attributeName="stroke-dasharray" values="5,5;7,5;5,5" dur="4s" repeatCount="indefinite" begin="2s" />
+  </line>
+  
+  <!-- Hardware Components with pulse animation -->
+  <circle cx="180" cy="80" r="15" fill="#f72585" fill-opacity="0.6">
+    <animate attributeName="r" values="15;17;15" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="fill-opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <text x="180" y="85" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">H</text>
+  
+  <!-- Software Components with pulse animation -->
+  <circle cx="180" cy="180" r="15" fill="#7209b7" fill-opacity="0.6">
+    <animate attributeName="r" values="15;17;15" dur="3s" repeatCount="indefinite" begin="1s" />
+    <animate attributeName="fill-opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite" begin="1s" />
+  </circle>
+  <text x="180" y="185" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">S</text>
+  
+  <!-- Application Components with pulse animation -->
+  <circle cx="180" cy="280" r="15" fill="#4361ee" fill-opacity="0.6">
+    <animate attributeName="r" values="15;17;15" dur="3s" repeatCount="indefinite" begin="2s" />
+    <animate attributeName="fill-opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite" begin="2s" />
+  </circle>
+  <text x="180" y="285" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">A</text>
+  
+  <!-- Data flow animation -->
+  <circle cx="400" cy="160" r="5" fill="#ffffff" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+    <animateMotion path="M 0 0 L 0 120" dur="4s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="400" cy="160" r="5" fill="#ffffff" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" begin="2s" />
+    <animateMotion path="M 0 0 L 0 120" dur="4s" repeatCount="indefinite" begin="2s" />
+  </circle>
+</svg>
